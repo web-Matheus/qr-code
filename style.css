@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Epilogue&family=Fira+Sans:ital,wght@0,400;1,100&family=Poppins:wght@700&family=Quicksand:wght@300;400;500;600&family=Roboto:ital,wght@1,300;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    background-color: #25be95;
+    padding: 1.5rem;
+}
+nav h2{
+    color: #fff;
+}
+main{
+    margin: 80px 200px;
+    display: flex;
+    justify-content: space-around;
+}
+@media (max-width: 725px){
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+main h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+main img{
+    width: 20rem;
+}
+main p{
+    width: 20rem;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+main form input{
+    display: block;
+    border: solid 2px rgb(229 231 235);
+    border-radius: 5px;
+    padding: .75rem;
+    width: 20rem;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+main form input[type="button"]{
+    background-color: #545d6e;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="button"]:hover{
+    background-color:black;
+}
+main form select{
+    display: block;
+    padding: 0.75rem;
+    border: solid 2px rgb(229 231 235);
+    border-radius: 5px;
+    width: 20rem;
+    font-family: 'Roboto', sans-serif;
+}
+#qrcode{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+#load{
+    width: 20px;
+    height: 20px;
+    border: 10px solid;
+    display: none;
+    border-radius: 50%;
+    border-top-color: transparent;
+    margin: 0 auto;
+    color: #25be95;
+    animation: load .6s linear infinite;
+
+}
+
+@keyframes load{
+    to{
+        transform: rotate(360deg);
+    }
+}

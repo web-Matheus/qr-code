@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Qr code</title>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+ integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</head>
+<body>
+    <nav>
+        <h2>Gerador de Qr Code</h2>
+    </nav>
+    <main>
+        <div>
+            <h1>Gerador de QR Code</h1>
+        <p>Com o gerador de qr code usuário de smartphones
+             podem acessar sites de forma rápida e fácil.</p>
+        <form id="gerar-form">
+            <input type="url" name="text" id="url"
+            placeholder="Cole aqui a url">
+            <label for="size">Tamanho</label>
+            <select id="size">
+                <option value="100">100x100</option>
+                <option value="200">200x200</option>
+                <option value="300" selected>300x300</option>
+                <option value="400">400x400</option>
+                <option value="500">500x500</option>
+                <option value="600">600x600</option>
+                <option value="700">700x700</option>
+            </select>
+            <input type="button"  onclick="SendForm()"
+            value="Gerar QR Code">
+        </form>
+        </div>
+        <img src="./img/qr-code.png" alt="">
+        
+    </main>
+    <section>
+        <div id="qrcode">
+            
+        </div>
+        <div id="load">
+
+        </div>
+    </section>
+</body>
+</html>
